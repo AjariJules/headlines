@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Headlines</title>
 <body>
-
+<form>
+    <input type="text" name="publication" placeholder="search">
+    <input type="submit" value="submit">
+</form>
     <h1> {{publication.upper()}} Headlines  </h1>
     {% for article in articles %}
     <b><a href="{{article.link}}"> {{article.title}}</a> </b><br>
